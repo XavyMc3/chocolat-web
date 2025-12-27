@@ -1,0 +1,131 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import PageHero from '../components/PageHero.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+const breadcrumbItems = [
+  { label: 'Sobre Nosotros' }
+];
+
+const values = [
+    {
+        title: "Calidad Local",
+        icon: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
+        description: "Trabajamos exclusivamente con ingredientes de nuestra tierra, apoyando a productores bolivianos."
+    },
+    {
+        title: "Tradición Artesanal",
+        icon: "M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z",
+        description: "Honramos las técnicas ancestrales y la paciencia que requiere el buen chocolate."
+    },
+    {
+        title: "Sabor Auténtico",
+        icon: "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z",
+        description: "Sin conservantes artificiales. El sabor puro del cacao y frutas naturales."
+    },
+    {
+        title: "Experiencia Única",
+        icon: "M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z",
+        description: "Cada caja es un regalo pensado para sorprender y deleitar los sentidos."
+    }
+];
+---
+
+<Layout title="Sobre Nosotros">
+  <Header />
+
+  <main>
+    <PageHero 
+      title="Nuestra Historia"
+      subtitle="La pasión por el chocolate nacida en el corazón de Bolivia"
+      image="https://images.unsplash.com/photo-1516214104703-d870798883c5?q=80&w=2070&auto=format&fit=crop"
+    />
+
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        
+        <div class="mb-12">
+            <Breadcrumbs items={breadcrumbItems} />
+        </div>
+
+        <!-- Origen Section -->
+        <div class="flex flex-col md:flex-row items-center gap-12 mb-24">
+            <div class="w-full md:w-1/2">
+                <h2 class="text-mishkila-secondary text-sm uppercase tracking-[0.2em] mb-4 font-bold">Nuestro Origen</h2>
+                <h3 class="text-4xl font-display font-bold text-mishkila-primary mb-6">Desde Cochabamba para el Mundo</h3>
+                <p class="text-gray-600 leading-relaxed mb-6 font-light text-lg">
+                    Mishkila nació de un sueño sencillo: mostrar al mundo la riqueza de nuestra tierra a través del chocolate. En las calles coloniales de Cochabamba, donde la tradición gastronómica se respira en cada esquina, comenzamos nuestra búsqueda de los mejores granos de cacao y manos expertas.
+                </p>
+                <p class="text-gray-600 leading-relaxed font-light text-lg">
+                    "Mishkila", que evoca la dulzura en nuestras raíces, es más que una tienda; es un homenaje a los productores locales, a las abuelas que compartieron sus recetas y a la alegría de compartir un buen momento.
+                </p>
+            </div>
+            <div class="w-full md:w-1/2 relative">
+                <div class="absolute -top-4 -left-4 w-24 h-24 bg-mishkila-accent/20 z-0 rounded-full"></div>
+                <img 
+                    src="https://images.unsplash.com/photo-1549416878-154ae94be752?q=80&w=2154&auto=format&fit=crop" 
+                    alt="Calles de Cochabamba" 
+                    class="rounded-sm shadow-xl relative z-10 w-full object-cover h-[500px]"
+                />
+            </div>
+        </div>
+
+        <!-- Visión Section -->
+        <div class="bg-mishkila-light p-12 md:p-20 text-center rounded-sm mb-24 relative overflow-hidden">
+            <div class="relative z-10 max-w-3xl mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-mishkila-accent mx-auto mb-6 opacity-80" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 13.1216 16 12.017 16H11.983C10.8784 16 9.98298 16.8954 9.98298 18L9.98298 21H20.017C21.1216 21 22.017 20.1046 22.017 19V5C22.017 3.89543 21.1216 3 20.017 3H3.98298C2.87841 3 1.98298 3.89543 1.98298 5V19C1.98298 20.1046 2.87841 21 3.98298 21H14.017ZM8.01698 6V13C8.01698 14.1046 8.91241 15 10.017 15H13.983C15.0876 15 15.983 14.1046 15.983 13V6H8.01698Z"></path></svg>
+                <h3 class="text-3xl md:text-5xl font-display font-bold text-mishkila-primary mb-8 italic leading-tight">
+                    "Productos hechos en nuestra tierra para compartir y amar."
+                </h3>
+                <p class="text-xl text-mishkila-secondary font-light">
+                    Nuestra visión es ser el puente entre el cacao de clase mundial que crece en nuestra Amazonía y tu paladar, creando experiencias que trascienden el simple acto de comer chocolate.
+                </p>
+            </div>
+        </div>
+
+        <!-- Valores Section -->
+        <div class="mb-24">
+            <h2 class="text-center text-4xl font-display font-bold text-mishkila-primary mb-16">Nuestros Pilares</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {values.map((v) => (
+                    <div class="bg-white p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 text-center group">
+                        <div class="w-16 h-16 bg-mishkila-light rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-mishkila-accent transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-mishkila-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d={v.icon} />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-display font-bold text-mishkila-primary mb-3">{v.title}</h4>
+                        <p class="text-gray-500 font-light text-sm leading-relaxed">{v.description}</p>
+                    </div>
+                ))}
+            </div>
+        </div>
+
+        <!-- Galería Masonry -->
+        <div>
+            <h2 class="text-mishkila-secondary text-sm uppercase tracking-[0.2em] mb-8 font-bold text-center">Nuestro Proceso</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 h-[600px]">
+                <div class="col-span-2 row-span-2 overflow-hidden rounded-sm relative group">
+                    <img src="https://images.unsplash.com/photo-1627993418659-52e854898239?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Cacao" />
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+                </div>
+                <div class="col-span-1 row-span-1 overflow-hidden rounded-sm relative group">
+                     <img src="https://images.unsplash.com/photo-1605658667623-e00b3f56e9c9?q=80&w=1964&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Trufas" />
+                </div>
+                <div class="col-span-1 row-span-2 overflow-hidden rounded-sm relative group">
+                     <img src="https://images.unsplash.com/photo-1548123378-bde4eca81d2d?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Empaquetado" />
+                </div>
+                <div class="col-span-1 row-span-1 overflow-hidden rounded-sm relative group">
+                     <img src="https://images.unsplash.com/photo-1575389609658-006497c2e174?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Detalle" />
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

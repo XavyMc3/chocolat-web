@@ -1,0 +1,90 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import PageHero from '../../components/PageHero.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import { brands } from '../../data/brands';
+import { productsByCategory } from '../../data/products';
+
+const brandId = 'ceibo';
+const brandData = brands.find(b => b.id === brandId);
+
+if (!brandData) {
+  throw new Error(`Brand ${brandId} not found`);
+}
+
+const allProducts = Object.values(productsByCategory).flat();
+const brandProducts = allProducts.filter(p => p.brand === brandData.name);
+
+const breadcrumbItems = [
+  { label: 'Marcas', href: '/#marcas' },
+  { label: brandData.name }
+];
+---
+
+<Layout title={`Chocolates ${brandData.name}`}>
+  <Header />
+
+  <main>
+    <PageHero 
+      title={brandData.name}
+      subtitle={brandData.description}
+      image={brandData.heroImage}
+    />
+
+    <section class="py-16 bg-white min-h-screen">
+      <div class="container mx-auto px-4">
+        
+        <div class="mb-12">
+            <Breadcrumbs items={breadcrumbItems} />
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
+            <div class="lg:col-span-1">
+                <div class="bg-mishkila-light p-8 rounded-sm sticky top-24">
+                    <h2 class="text-2xl font-display font-bold text-mishkila-primary mb-4">Sobre la Marca</h2>
+                    <div class="w-12 h-1 bg-mishkila-accent mb-6"></div>
+                    <p class="text-gray-600 leading-relaxed font-light mb-6">
+                        {brandData.shortHistory}
+                    </p>
+                    <div class="border-t border-mishkila-accent/20 pt-6">
+                        <h4 class="font-bold text-mishkila-primary text-sm uppercase tracking-wider mb-3">Especialidades</h4>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 bg-mishkila-secondary rounded-full"></span>
+                                Cacao Orgánico
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 bg-mishkila-secondary rounded-full"></span>
+                                Altos porcentajes
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 bg-mishkila-secondary rounded-full"></span>
+                                Comercio justo
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-2">
+                <h3 class="text-3xl font-display font-bold text-mishkila-primary mb-8">Catálogo Disponible</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {brandProducts.map((product) => (
+                        <ProductCard 
+                        {...product} 
+                        category="Marcas"
+                        />
+                    ))}
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

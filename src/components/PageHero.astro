@@ -1,0 +1,64 @@
+---
+import { Image } from "astro:assets";
+import { resolveImage } from "../utils/images";
+
+interface Props {
+  title: string;
+  subtitle?: string;
+  image?: string;
+  imageAlt?: string;
+}
+
+const { title, subtitle, image, imageAlt = "Banner Mishkila" } = Astro.props;
+
+// Default dark gradient if no image
+const bgClass = image
+  ? ""
+  : "bg-gradient-to-r from-mishkila-primary to-mishkila-dark";
+
+const imageSrc = image ? await resolveImage(image) : null;
+---
+
+<div
+  class={`relative w-full h-[40vh] md:h-[50vh] flex items-center justify-center overflow-hidden ${bgClass}`}
+>
+  {
+    imageSrc && (
+      <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-black/50 z-10" />
+        {typeof imageSrc === "string" ? (
+          <img
+            src={imageSrc}
+            alt={imageAlt}
+            class="w-full h-full object-cover"
+            loading="eager"
+          />
+        ) : (
+          <Image
+            src={imageSrc}
+            alt={imageAlt}
+            width={1920}
+            class="w-full h-full object-cover"
+            loading="eager"
+          />
+        )}
+      </div>
+    )
+  }
+
+  <div class="relative z-20 text-center px-4 max-w-4xl mx-auto text-white">
+    <h1
+      class="text-3xl md:text-6xl font-display font-bold mb-4 animate-fade-in"
+    >
+      {title}
+    </h1>
+
+    {
+      subtitle && (
+        <p class="text-base md:text-xl font-light text-mishkila-light/90 max-w-2xl mx-auto leading-relaxed">
+          {subtitle}
+        </p>
+      )
+    }
+  </div>
+</div>

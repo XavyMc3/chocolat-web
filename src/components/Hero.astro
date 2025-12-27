@@ -1,0 +1,41 @@
+---
+---
+<section id="hero" class="relative min-h-screen flex items-center justify-center bg-mishkila-dark overflow-hidden">
+    <!-- Background Image or Gradient Fallback -->
+    <div class="absolute inset-0 z-0">
+        <!-- Using a sophisticated dark gradient since image generation was limited -->
+        <div class="w-full h-full bg-linear-to-br from-mishkila-primary to-black opacity-90"></div>
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1549007994-cb92caebd54b?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-40 mix-blend-overlay"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+        <h2 class="text-mishkila-accent text-sm md:text-base uppercase tracking-[0.3em] mb-4 animate-fade-in">
+            Chocolatería Boutique
+        </h2>
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-mishkila-light mb-8 leading-tight">
+            Sencillamente <br />
+            <span class="text-mishkila-accent italic">Nuestro</span>
+        </h1>
+        <p class="text-gray-300 text-lg md:text-xl mb-12 max-w-2xl mx-auto font-light">
+            Descubre una selección exclusiva de los chocolates más finos de Bolivia.
+            Tradición, elegancia y sabor en cada bocado.
+        </p>
+        
+        <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+            <a href="#categorias" class="bg-mishkila-accent text-mishkila-primary px-8 py-4 uppercase tracking-widest font-bold hover:bg-white transition-all duration-300 transform hover:scale-105 shadow-xl">
+                Explorar Colección
+            </a>
+            <a href="#destacados" class="border border-mishkila-light text-mishkila-light px-8 py-4 uppercase tracking-widest font-bold hover:bg-mishkila-light hover:text-mishkila-primary transition-all duration-300">
+                Ver Favoritos
+            </a>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-mishkila-accent">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+    </div>
+</section>

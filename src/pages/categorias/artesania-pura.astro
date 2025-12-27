@@ -1,0 +1,50 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import PageHero from "../../components/PageHero.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import ProductCard from "../../components/ProductCard.astro";
+import { productsByCategory } from "../../data/products";
+
+const categoryId = "artesania-pura";
+const categoryName = "Artesanía Pura";
+const products = productsByCategory[categoryId] || [];
+
+const breadcrumbItems = [
+  { label: "Categorías", href: "/#categorias" },
+  { label: categoryName },
+];
+---
+
+<Layout title={categoryName}>
+  <Header />
+
+  <main>
+    <PageHero
+      title={categoryName}
+      subtitle="El arte del chocolate hecho a mano, en presentaciones únicas."
+      image="/images/categories/header-artisan.jpg"
+    />
+
+    <section class="py-12 bg-white min-h-screen">
+      <div class="container mx-auto px-4">
+        <div class="mb-8">
+          <Breadcrumbs items={breadcrumbItems} />
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+        >
+          {
+            products.map((product) => (
+              <ProductCard {...product} category={categoryName} />
+            ))
+          }
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

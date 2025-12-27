@@ -1,0 +1,67 @@
+---
+import ProductCard from "./ProductCard.astro";
+
+import { productsByCategory } from "../data/products";
+
+// Flatten products to search easily, or just pick by known indices/IDs if stable.
+// Since we want specific "best value/quality" ones, let's pick manually.
+
+const featuredProducts = [
+  // Premium Box - Good mid-range gift
+  productsByCategory["colecciones-premium"].find((p) =>
+    p.name.includes("CAJA RECTANGULAR (CHOCOLATES SURTIDOS) 250g"),
+  ) || productsByCategory["colecciones-premium"][0],
+
+  // Bag - Accessible treat
+  productsByCategory["delicias-envueltas"].find((p) =>
+    p.name.includes("BOMBÓN CON CREMA EN BOLSA 200G"),
+  ) || productsByCategory["delicias-envueltas"][0],
+
+  // Artisan - High end
+  productsByCategory["artesania-pura"].find((p) =>
+    p.name.includes("CAJA DE MADERA PEQUEÑA"),
+  ) || productsByCategory["artesania-pura"][0],
+
+  // Tablet - Everyday gourmet
+  productsByCategory["tabletas-gourmet"].find((p) =>
+    p.name.includes("AMARGO INTENSO 100G"),
+  ) || productsByCategory["tabletas-gourmet"][0],
+];
+---
+
+<section id="destacados" class="py-24 bg-white">
+  <div class="container mx-auto px-4">
+    <div
+      class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6"
+    >
+      <div class="max-w-xl">
+        <h2
+          class="text-mishkila-secondary text-sm uppercase tracking-[0.2em] mb-4 font-bold"
+        >
+          Selección Exclusiva
+        </h2>
+        <h3
+          class="text-4xl md:text-5xl font-display font-bold text-mishkila-primary"
+        >
+          Nuestros Favoritos
+        </h3>
+      </div>
+
+      <a
+        href="#categorias"
+        class="hidden md:inline-block border-b-2 border-mishkila-accent text-mishkila-primary pb-1 hover:text-mishkila-secondary transition-colors"
+      >
+        Ver todo el catálogo
+      </a>
+    </div>
+
+    <!-- Scrollable on mobile, Grid on Desktop -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      {featuredProducts.map((product) => <ProductCard {...product} />)}
+    </div>
+
+    <div class="mt-12 text-center md:hidden">
+      <a href="#categorias" class="btn-primary"> Ver todo el catálogo </a>
+    </div>
+  </div>
+</section>

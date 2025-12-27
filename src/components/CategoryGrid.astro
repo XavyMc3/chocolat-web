@@ -1,0 +1,98 @@
+---
+import { Image } from "astro:assets";
+import headerPremium from "../assets/images/categories/header-premium.jpg";
+import headerBags from "../assets/images/categories/header-bags.jpg";
+import headerArtisan from "../assets/images/categories/header-artisan.jpg";
+import headerDragees from "../assets/images/categories/header-dragees.jpg";
+import headerTablets from "../assets/images/categories/header-tablets.jpg";
+import headerSpecial from "../assets/images/categories/header-special.jpg";
+
+const categories = [
+  {
+    id: "colecciones-premium",
+    nombre: "Colecciones Premium",
+    descripcion: "Cajas elegantes para regalar",
+    image: headerPremium,
+  },
+  {
+    id: "delicias-envueltas",
+    nombre: "Delicias Envueltas",
+    descripcion: "Chocolates en presentación bolsa",
+    image: headerBags,
+  },
+  {
+    id: "artesania-pura",
+    nombre: "Artesanía Pura",
+    descripcion: "Elaboración artesanal tradicional",
+    image: headerArtisan,
+  },
+  {
+    id: "tesoros-confitados",
+    nombre: "Tesoros Confitados",
+    descripcion: "Grageas y chocolates cubiertos",
+    image: headerDragees,
+  },
+  {
+    id: "tabletas-gourmet",
+    nombre: "Tabletas Gourmet",
+    descripcion: "Barras de chocolate premium",
+    image: headerTablets,
+  },
+  {
+    id: "ediciones-especiales",
+    nombre: "Ediciones Especiales",
+    descripcion: "Productos de temporada",
+    image: headerSpecial,
+  },
+];
+---
+
+<section id="categorias" class="py-24 bg-mishkila-light">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2
+        class="text-mishkila-secondary text-sm uppercase tracking-[0.2em] mb-4 font-bold"
+      >
+        Nuestras Variedades
+      </h2>
+      <h3
+        class="text-3xl md:text-5xl font-display font-bold text-mishkila-primary"
+      >
+        Descubre la Excelencia
+      </h3>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+      {
+        categories.map((cat) => (
+          <a
+            href={`/categorias/${cat.id}`}
+            class="group relative block overflow-hidden rounded-sm shadow-md hover:shadow-2xl transition-all duration-500"
+          >
+            <div class="aspect-w-4 aspect-h-3 h-80 overflow-hidden">
+              <Image
+                src={cat.image}
+                alt={cat.nombre}
+                width={800}
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
+              />
+              <div class="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-500" />
+            </div>
+
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-black/20 opacity-100 transition-opacity duration-300">
+              <div class="bg-white/90 backdrop-blur-sm p-6 w-10/12 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 border border-mishkila-accent/30">
+                <h4 class="text-2xl font-display font-bold text-mishkila-primary mb-2 group-hover:text-mishkila-secondary transition-colors">
+                  {cat.nombre}
+                </h4>
+                <div class="w-12 h-0.5 bg-mishkila-accent mx-auto mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100" />
+                <p class="text-mishkila-primary/80 font-body text-sm">
+                  {cat.descripcion}
+                </p>
+              </div>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</section>

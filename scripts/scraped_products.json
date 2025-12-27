@@ -1,0 +1,417 @@
+{
+  "colecciones-premium": [
+    {
+      "name": "CAJA DORADA DE LUJO 560G",
+      "image": "/images/products/parati/colecciones-premium/caja_dorada_de_lujo_560g.jpg",
+      "brand": "Para Ti",
+      "category": "colecciones-premium",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CAJA CUADRADA (CHOCOLATES SURTIDOS) 140G",
+      "image": "/images/products/parati/colecciones-premium/caja_cuadrada_(chocolates_surtidos)_140g.jpg",
+      "brand": "Para Ti",
+      "category": "colecciones-premium",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CAJA RECTANGULAR (CHOCOLATES SURTIDOS) 250g",
+      "image": "/images/products/parati/colecciones-premium/caja_rectangular_(chocolates_surtidos)_250g.jpg",
+      "brand": "Para Ti",
+      "category": "colecciones-premium",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CAJA GUINDA OCTOGONAL (GRAGEAS SURTIDAS) 400G",
+      "image": "/images/products/parati/colecciones-premium/caja_guinda_octogonal_(grageas_surtidas)_400g.jpg",
+      "brand": "Para Ti",
+      "category": "colecciones-premium",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CAJA DORADA CORAZÓN TE AMO (CHOCOLATE NEGRO) 90G",
+      "image": "/images/products/parati/colecciones-premium/caja_dorada_corazón_te_amo_(chocolate_negro)_90g.jpg",
+      "brand": "Para Ti",
+      "category": "colecciones-premium",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CAJA DORADA 4 CORAZONES ROJO 150G",
+      "image": "/images/products/parati/colecciones-premium/caja_dorada_4_corazones_rojo_150g.jpg",
+      "brand": "Para Ti",
+      "category": "colecciones-premium",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CAJA DORADA PEQUEÑA CON TRUFFAS DE LICOR 200g",
+      "image": "/images/products/parati/colecciones-premium/caja_dorada_pequeña_con_truffas_de_licor_200g.jpg",
+      "brand": "Para Ti",
+      "category": "colecciones-premium",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CAJA DORADA GRANDE CON TRUFFAS DE LICOR 220g",
+      "image": "/images/products/parati/colecciones-premium/caja_dorada_grande_con_truffas_de_licor_220g.jpg",
+      "brand": "Para Ti",
+      "category": "colecciones-premium",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CAJA RECTANGULAR DE CHOCOLATES CON SABORES 240g",
+      "image": "/images/products/parati/colecciones-premium/caja_rectangular_de_chocolates_con_sabores_240g.jpg",
+      "brand": "Para Ti",
+      "category": "colecciones-premium",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CAJA CUADRADA DE CHOCOLATES CON SABORES 180 GRS.",
+      "image": "/images/products/parati/colecciones-premium/caja_cuadrada_de_chocolates_con_sabores_180_grs..jpg",
+      "brand": "Para Ti",
+      "category": "colecciones-premium",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CAJA RECTANGULAR CON SAMBITOS 220g",
+      "image": "/images/products/parati/colecciones-premium/caja_rectangular_con_sambitos_220g.jpg",
+      "brand": "Para Ti",
+      "category": "colecciones-premium",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CAJA RECTANGULAR CON TRUFFAS DE LICOR 200g",
+      "image": "/images/products/parati/colecciones-premium/caja_rectangular_con_truffas_de_licor_200g.jpg",
+      "brand": "Para Ti",
+      "category": "colecciones-premium",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CAJA CUADRADA CON TRUFFAS DE LICOR 140g",
+      "image": "/images/products/parati/colecciones-premium/caja_cuadrada_con_truffas_de_licor_140g.jpg",
+      "brand": "Para Ti",
+      "category": "colecciones-premium",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CAJA DE BOMBONES CON CREMA 150 G",
+      "image": "/images/products/parati/colecciones-premium/caja_de_bombones_con_crema_150_g.jpg",
+      "brand": "Para Ti",
+      "category": "colecciones-premium",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CAJA DE GRAGEAS DE MANÍ 200g",
+      "image": "/images/products/parati/colecciones-premium/caja_de_grageas_de_maní_200g.jpg",
+      "brand": "Para Ti",
+      "category": "colecciones-premium",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CAJA DE GRAGEAS DE UVAS PASAS 200g",
+      "image": "/images/products/parati/colecciones-premium/caja_de_grageas_de_uvas_pasas_200g.jpg",
+      "brand": "Para Ti",
+      "category": "colecciones-premium",
+      "description": "",
+      "price": 0,
+      "badge": null
+    }
+  ],
+  "delicias-envueltas": [
+    {
+      "name": "BOMBÓN CON CREMA EN BOLSA 200G",
+      "image": "/images/products/parati/delicias-envueltas/bombón_con_crema_en_bolsa_200g.jpg",
+      "brand": "Para Ti",
+      "category": "delicias-envueltas",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "BOMBÓN CON CREMA EN BOLSA 100g",
+      "image": "/images/products/parati/delicias-envueltas/bombón_con_crema_en_bolsa_100g.jpg",
+      "brand": "Para Ti",
+      "category": "delicias-envueltas",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CHOCOLATE CON FRUTAS EN BOLSA 100G",
+      "image": "/images/products/parati/delicias-envueltas/chocolate_con_frutas_en_bolsa_100g.jpg",
+      "brand": "Para Ti",
+      "category": "delicias-envueltas",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CHOCOLATE CON SABORES EN BOLSA 100G",
+      "image": "/images/products/parati/delicias-envueltas/chocolate_con_sabores_en_bolsa_100g.jpg",
+      "brand": "Para Ti",
+      "category": "delicias-envueltas",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CHOCOLATES RELLENOS EN BOLSA 100G",
+      "image": "/images/products/parati/delicias-envueltas/chocolates_rellenos_en_bolsa_100g.jpg",
+      "brand": "Para Ti",
+      "category": "delicias-envueltas",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "MARSHMALLOWS CON CHOCOLATE EN BOLSA 60G",
+      "image": "/images/products/parati/delicias-envueltas/marshmallows_con_chocolate_en_bolsa_60g.jpg",
+      "brand": "Para Ti",
+      "category": "delicias-envueltas",
+      "description": "",
+      "price": 0,
+      "badge": null
+    }
+  ],
+  "artesania-pura": [
+    {
+      "name": "CAJA DE MADERA PEQUEÑA (CHOCOLATES SURTIDOS)  250g",
+      "image": "/images/products/parati/artesania-pura/caja_de_madera_pequeña_(chocolates_surtidos)__250g.jpg",
+      "brand": "Para Ti",
+      "category": "artesania-pura",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CAJA MADERA GRANDE (CHOCOLATES SURTIDOS) 320g",
+      "image": "/images/products/parati/artesania-pura/caja_madera_grande_(chocolates_surtidos)_320g.jpg",
+      "brand": "Para Ti",
+      "category": "artesania-pura",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CAJA DE MIMBRE PEQUEÑA (CHOCOLATES SURTIDOS) 250G",
+      "image": "/images/products/parati/artesania-pura/caja_de_mimbre_pequeña_(chocolates_surtidos)_250g.jpg",
+      "brand": "Para Ti",
+      "category": "artesania-pura",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CAJA DE MIMBRE GRANDE (CHOCOLATE SURTIDO) 320G",
+      "image": "/images/products/parati/artesania-pura/caja_de_mimbre_grande_(chocolate_surtido)_320g.jpg",
+      "brand": "Para Ti",
+      "category": "artesania-pura",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "Caja Corazón 250g",
+      "image": "/images/products/parati/artesania-pura/caja_corazón_250g.jpg",
+      "brand": "Para Ti",
+      "category": "artesania-pura",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CANASTA SURTIDA GRANDE 280G",
+      "image": "/images/products/parati/artesania-pura/canasta_surtida_grande_280g.jpg",
+      "brand": "Para Ti",
+      "category": "artesania-pura",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "CANASTA REDONDA CON CINTURÓN (CHOCOLATES Y BOMBONES) 250G",
+      "image": "/images/products/parati/artesania-pura/canasta_redonda_con_cinturón_(chocolates_y_bombones)_250g.jpg",
+      "brand": "Para Ti",
+      "category": "artesania-pura",
+      "description": "",
+      "price": 0,
+      "badge": null
+    }
+  ],
+  "tesoros-confitados": [],
+  "tabletas-gourmet": [
+    {
+      "name": "Tableta de Chocolate Amargo Intenso 100g",
+      "image": "/images/products/parati/tabletas-gourmet/tableta_de_chocolate_amargo_intenso_100g.jpg",
+      "brand": "Para Ti",
+      "category": "tabletas-gourmet",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "TABLETA DE CHOCOLATE AMARGO INTENSO 50G",
+      "image": "/images/products/parati/tabletas-gourmet/tableta_de_chocolate_amargo_intenso_50g.jpg",
+      "brand": "Para Ti",
+      "category": "tabletas-gourmet",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "TABLETA DE CHOCOLATE AMARGO 100G",
+      "image": "/images/products/parati/tabletas-gourmet/tableta_de_chocolate_amargo_100g.jpg",
+      "brand": "Para Ti",
+      "category": "tabletas-gourmet",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "TABLETA DE CHOCOLATE AMARGO 50G",
+      "image": "/images/products/parati/tabletas-gourmet/tableta_de_chocolate_amargo_50g.jpg",
+      "brand": "Para Ti",
+      "category": "tabletas-gourmet",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "TABLETA DE CHOCOLATE CON SABOR SEMI AMARGO 100G",
+      "image": "/images/products/parati/tabletas-gourmet/tableta_de_chocolate_con_sabor_semi_amargo_100g.jpg",
+      "brand": "Para Ti",
+      "category": "tabletas-gourmet",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "TABLETA DE CHOCOLATE SEMI AMARGO 50g",
+      "image": "/images/products/parati/tabletas-gourmet/tableta_de_chocolate_semi_amargo_50g.jpg",
+      "brand": "Para Ti",
+      "category": "tabletas-gourmet",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "TABLETA DE CHOCOLATE CON LECHE 100G",
+      "image": "/images/products/parati/tabletas-gourmet/tableta_de_chocolate_con_leche_100g.jpg",
+      "brand": "Para Ti",
+      "category": "tabletas-gourmet",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "TABLETA DE CHOCOLATE CON LECHE 50G",
+      "image": "/images/products/parati/tabletas-gourmet/tableta_de_chocolate_con_leche_50g.jpg",
+      "brand": "Para Ti",
+      "category": "tabletas-gourmet",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "TABLETA DE CHOCOLATE BLANCO 100G",
+      "image": "/images/products/parati/tabletas-gourmet/tableta_de_chocolate_blanco_100g.jpg",
+      "brand": "Para Ti",
+      "category": "tabletas-gourmet",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "TABLETA DE CHOCOLATE BLANCO 50g",
+      "image": "/images/products/parati/tabletas-gourmet/tableta_de_chocolate_blanco_50g.jpg",
+      "brand": "Para Ti",
+      "category": "tabletas-gourmet",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "TABLETA DE CHOCOLATE CON SABOR A NARANJA 100G",
+      "image": "/images/products/parati/tabletas-gourmet/tableta_de_chocolate_con_sabor_a_naranja_100g.jpg",
+      "brand": "Para Ti",
+      "category": "tabletas-gourmet",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "TABLETA DE CHOCOLATE CON SABOR A NARANJA 50G",
+      "image": "/images/products/parati/tabletas-gourmet/tableta_de_chocolate_con_sabor_a_naranja_50g.jpg",
+      "brand": "Para Ti",
+      "category": "tabletas-gourmet",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "TABLETA DE CHOCOLATE CON SABOR A PISTACHO 100G",
+      "image": "/images/products/parati/tabletas-gourmet/tableta_de_chocolate_con_sabor_a_pistacho_100g.jpg",
+      "brand": "Para Ti",
+      "category": "tabletas-gourmet",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "TABLETA DE CHOCOLATE CON SABOR A PISTACHO 50G",
+      "image": "/images/products/parati/tabletas-gourmet/tableta_de_chocolate_con_sabor_a_pistacho_50g.jpg",
+      "brand": "Para Ti",
+      "category": "tabletas-gourmet",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "TABLETA DE CHOCOLATE CON ALMENDRAS 100G",
+      "image": "/images/products/parati/tabletas-gourmet/tableta_de_chocolate_con_almendras_100g.jpg",
+      "brand": "Para Ti",
+      "category": "tabletas-gourmet",
+      "description": "",
+      "price": 0,
+      "badge": null
+    },
+    {
+      "name": "TABLETA DE CHOCOLATE CON ALMENDRA 50g",
+      "image": "/images/products/parati/tabletas-gourmet/tableta_de_chocolate_con_almendra_50g.jpg",
+      "brand": "Para Ti",
+      "category": "tabletas-gourmet",
+      "description": "",
+      "price": 0,
+      "badge": null
+    }
+  ],
+  "ediciones-especiales": []
+}

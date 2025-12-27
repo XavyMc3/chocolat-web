@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chocolat-web.pages.dev/sitemap-index.xml
