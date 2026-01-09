@@ -9,6 +9,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://chocolat-web.pages.dev',
+  output: 'static',
   vite: {
     plugins: [tailwindcss()]
   },

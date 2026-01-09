@@ -1,8 +1,7 @@
 {
   "name": "chocolat-web",
-  "compatibility_date": "2024-09-23",
-  "compatibility_flags": [
-    "nodejs_compat"
-  ],
-  "pages_build_output_dir": "./dist"
+  "compatibility_date": "2025-01-01",
+  "assets": {
+    "directory": "./dist"
+  }
 }
